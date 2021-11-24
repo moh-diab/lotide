@@ -8,8 +8,8 @@ const assertEqual = function (a, b) {
 };
 
 const tail = function (array) {
-  array = array.slice(1);
-  return array;
+array = array.slice(1);
+return array;
 };
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
