@@ -1,15 +1,17 @@
-var planetMoons = {
-  mercury: 0,
-  venus: 0,
-  earth: 1,
-  mars: 2,
-  jupiter: 67,
-  saturn: 62,
-  uranus: 27,
-  neptune: 14
-};
-
-for (var planet in planetMoons) {
-  var numberOfMoons = planetMoons[planet];
-  console.log("Planet: " + planet + ", # of Moons: "+ numberOfMoons);
+// The second argument/parameter is expected to be a (callback) function
+const findWaldo = function(names, found) {
+  for (let i = 0; i < names.length; i++) {
+    let name = names[i];
+    if (name === "Waldo") {
+      found();   // execute callback
+    }
+  }
 }
+
+const actionWhenFound = function() {
+  console.log("Found him!");
+}
+
+arr = ["Alice", "Bob", "Waldo", "Winston"]
+
+findWaldo(arr, actionWhenFound);
