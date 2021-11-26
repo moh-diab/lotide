@@ -19,6 +19,8 @@ const eqArrays = function (arr1, arr2) {
 
 const words = ["ground", "control", "to", "major", "tom"];
 
+const animals = ["dog", "cat", "lion", "mouse"];
+
 const map = function (array, callback) {
 
   const results = [];
@@ -35,4 +37,8 @@ const map = function (array, callback) {
 
 assertArraysEqual(map(words, word => word[0]), ['g', 'c', 't', 'm', 't']); 
 
+assertArraysEqual(map(words, word => word[0]), ['r', 'o', 'o', 'a', 'o']);
+
 assertArraysEqual(map(words, word => word[1]), ['r', 'o', 'o', 'a', 'o']);
+
+assertArraysEqual(map(animals, word => word[0]), ['d', 'c', 'l', 'm']);
