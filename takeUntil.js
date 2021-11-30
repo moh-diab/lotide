@@ -23,7 +23,7 @@ const takeUntil = function (array, callback) {
 
   for (let item of array) {
 
-    if (callback(item) === false) {
+    if (callback(item) !== true) {
       results.push(item)
     } else break;
   }
