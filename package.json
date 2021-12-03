@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@moh_diab/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide",
   "main": "Just Test.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/moh-diab/lotide.git"
   },
-  "author": "",
+  "author": "Mohamed Diab",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/moh-diab/lotide/issues"
